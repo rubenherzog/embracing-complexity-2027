@@ -60,3 +60,41 @@ body{background:#fffef8;color:var(--ink);font-family:"Source Sans 3",Arial,sans-
 .footer{background:#102d40;border-top:5px solid #5d90a3}
 @media(max-width:930px){.institutional-inner{gap:16px}.institutional-caption{font-size:.58rem}.institutional-inner img{height:65px!important;max-width:170px}.hero-grid{grid-template-columns:1fr}.hero-art{width:100%;right:-25%;opacity:.33}.hero-panel{max-width:680px}.ibro-support{grid-template-columns:175px 1fr;gap:22px}}
 @media(max-width:600px){.institutional-banner{padding:14px 0}.institutional-inner{gap:10px;flex-wrap:wrap}.institutional-inner a{height:52px}.institutional-inner img{height:50px!important;max-width:126px}.institutional-rule{height:42px}.institutional-caption{width:100%;text-align:left;margin:6px 0 0}.hero{padding:47px 0 68px}.hero h1{font-size:clamp(2.5rem,10.5vw,4.5rem);letter-spacing:-.065em}.hero-art{width:140%;right:-50%;opacity:.24}.hero-panel{padding:20px}.ibro-support{grid-template-columns:1fr}.ibro-logo-wrap{width:155px}.section{padding:60px 0}.chapter-label span{font-size:2.4rem}}
+
+
+/* Institutional logos: >=2× the former displayed sizes, preserving aspect ratios. */
+.institutional-banner{padding:24px 0}
+.institutional-inner{min-height:186px;gap:34px;flex-wrap:wrap}
+.institutional-inner a{height:auto;min-width:0;flex:0 1 auto}
+.institutional-inner img{height:168px;width:auto;max-width:420px;object-fit:contain}
+.institutional-inner a:first-child img{height:166px;max-width:470px}
+.institutional-rule{height:116px}
+.institutional-caption{flex:1 1 190px;align-self:center}
+.ibro-support{grid-template-columns:minmax(230px,330px) minmax(0,1fr);gap:42px;max-width:1110px}
+.ibro-logo-wrap{padding:26px;gap:24px;justify-items:center}
+.ibro-logo-wrap a{display:block;width:100%}
+.ibro-logo-wrap img{width:100%;max-width:290px;height:auto;object-fit:contain}
+.ibro-logo-wrap .ibro-awardee{width:100%;max-width:290px;height:auto}
+@media(max-width:1120px){
+ .institutional-inner{gap:20px}
+ .institutional-caption{flex-basis:100%;text-align:left;margin:0}
+}
+@media(max-width:930px){
+ .institutional-inner{min-height:140px}
+ .institutional-inner a{height:auto}
+ .institutional-inner img{height:130px!important;max-width:min(35vw,320px)}
+ .institutional-inner a:first-child img{height:130px!important;max-width:min(39vw,350px)}
+ .institutional-rule{height:90px}
+ .ibro-support{grid-template-columns:minmax(160px,260px) minmax(0,1fr)}
+}
+@media(max-width:600px){
+ .institutional-banner{padding:22px 0}
+ .institutional-inner{gap:12px;min-height:110px}
+ .institutional-inner a{height:auto}
+ .institutional-inner img{height:100px!important;max-width:min(39vw,205px)}
+ .institutional-inner a:first-child img{height:100px!important;max-width:min(42vw,235px)}
+ .institutional-rule{height:68px}
+ .institutional-caption{width:100%;flex-basis:100%;text-align:left;margin-top:12px}
+ .ibro-support{grid-template-columns:1fr}
+ .ibro-logo-wrap{width:min(100%,340px);padding:18px;gap:20px}
+}
